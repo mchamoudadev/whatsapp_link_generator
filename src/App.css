@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #7fffd4;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    max-width: 640px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.whatsapp-icon {
+    width: 80px;
+    height: 80px;
+    color: #06cf9c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+    width: 100%;
+    height: auto;
+    background-color :#fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    outline-color: #0ba06e;
+}
+
+label {
+    padding: 15px 12px 12px 0;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.btn {
+    width: 100%;
+    padding: 17px 10px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #11a070;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #26ac7f;
+}
+
+.result-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-control-result {
+    width: 72%;
+    padding: 15px;
+    border : 1px solid #ccc;
+    border-radius: 4px;
+    outline-color: #0ba06e;
+    background-color : #ebe4e4; 
+}
+
+.result-text {
+    border-radius: 4px;
+    border: 1px solid #0ba06e;
+    margin: 10px;
+    display: flex;
+    justify-content: space-arround;
+    align-items: center;
+}
+
+.result-text span {
+    font-weight: 500;
+}
+
+.copy-icon {
+        width: 50px;
+        height: 50px;
+        color: #06cf9c;
+        cursor: pointer;
 }
